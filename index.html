@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提醒事项</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>提醒事项</h1>
+
+        <!-- 添加事项表单 -->
+        <form id="reminderForm">
+            <input type="text" id="title" placeholder="事项标题" required />
+            <textarea id="content" placeholder="事项内容" required></textarea>
+            <input type="datetime-local" id="reminderTime" required />
+            <button type="submit">添加提醒</button>
+        </form>
+
+        <!-- 提醒事项列表 -->
+        <h2>所有提醒事项</h2>
+        <ul id="reminderList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
